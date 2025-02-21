@@ -1,5 +1,5 @@
 function voltarParaSite(){
-    window.location.href='../home/index.html';
+    window.location.href='/index.html';
 }
 
 document.querySelector("form").addEventListener("submit", function(event) {
