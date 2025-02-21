@@ -274,6 +274,9 @@ input[type="checkbox"]{
     font-size: 20px;
     cursor: pointer;
 }
+.botao button:hover{
+    background-color: #1D5A80;
+}
 
 @media (max-width: 955px){
     .imgHeaderForm img{

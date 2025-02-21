@@ -1,5 +1,5 @@
 function voltarParaSite(){
-    window.location.href='site.html';
+    window.location.href='/home/site.html';
 }
 
 document.querySelector("form").addEventListener("submit", function(event) {
@@ -35,7 +35,7 @@ document.querySelector("form").addEventListener("submit", function(event) {
     // Enviar e-mail via EmailJS
     emailjs.send("modalizeSID", "modalizeTID", templateParams)
         .then(function(response) {
-            window.location.href='obrigado.html'
+            window.location.href='/obrigado/obrigado.html'
             document.querySelector("form").reset();
         }, function(error) {
             alert("Erro ao enviar o e-mail: " + JSON.stringify(error));
