@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/Favicon.png" type="image/x-icon">
+    <title>Modalize</title>
+    <link rel="stylesheet" href="site.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <button class="logo"><img src="imagens/logomarca.png" class="logo"></button>
+        <div class="divSectionsHeader">
+            <button class="sectionHeader" onclick="irParaServicos()"><b>Serviços</b></button>
+            <button class="sectionHeader" onclick="irParaBeneficios()"><b>Benefícios</b></button>
+            <button class="sectionHeader" onclick="irParaPromocao()"><b>Promoção</b></button>
+        </div>
+        <button class="buttonContactHeader" onclick="irParaForm()"><b>Contate-nos</b></button>
+    </header>
+    
+    <section class="slider">
+        <div class="slideTxt">
+            <div class="divTxt1">
+                <h2>Site Web<br>Para Sua Empresa</h2>
+                <button onclick="irParaForm()"><b>Contate-nos</b></button>
+            </div>
+            <div class="divTxt2">
+                <h2>App Mobile<br>Para Sua Empresa</h2>
+                <button onclick="irParaForm()"><b>Contate-nos</b></button>
+            </div>
+        </div>
+        <div class="slideImg">
+            <div class="divImg">
+                <img src="imagens/Template Web 1.png" alt="Web Site 1" class="website1">
+            </div>
+            <div class="divImg">
+                <img src="imagens/Template App 1.png" alt="App 1" class="app1">
+            </div>
+        </div>
+    </section>
+
+    <section class="servicos" id="servicos">
+        <div class="headerServicos">
+            <div class="divBotaoPraEsquerda1">
+                <button class="botaoPraEsquerda1">
+                    <b><img src="imagens/seta-esquerda.png" style="width: 35px;"></b>
+                </button>
+            </div>
+            <div class="headerServicos">
+                <div class="opcoes">
+                    <div class="tituloServicos ativa">
+                        <h2>App Mobile</h2>
+                    </div>
+                    <div class="tituloServicos">
+                        <h2>Site Web</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="divBotaoPraDireita1">
+                <button class="botaoPraDiretita1">
+                    <b><img src="imagens/seta-direita.png" style="width: 35px;"></b>
+                </button>
+            </div>
+        </div>
+
+        <div class="contentServicos">
+            <div class="divBotaoPraEsquerda2">
+                <button class="botaoPraEsquerda2">
+                    <b><img src="imagens/seta-esquerda.png"></b>
+                </button>
+            </div>
+            <div class="servico ativo">
+                <div class="infoServico">
+                    <div class="imgServicos">
+                        <img src="imagens/Template App 2.png">
+                    </div>
+                    <div class="textsServicos">
+                        <div class="tituloServico">
+                            <h2>Criamos o <span style="background-color: #3480e326; color: #333333; border-radius: 4px; padding: 4px;">App</span> da sua Marca</h2>
+                        </div>
+                        <div class="textServico">
+                            <p><b>Aplicativos Sob Medida:</b> Desenvolvemos apps personalizados para o seu negócio, com funcionalidades que atendem exatamente às necessidades dos seus clientes.</p>
+                        </div>
+                        <div class="textServico">
+                            <p><b>Acesso Facilitado e Rápido:</b> Seus clientes poderão acessar seu conteúdo ou fazer compras de maneira simples e eficiente, sem complicação.</p>
+                        </div>
+                        <div class="textServico">
+                            <p><b>Atualizações e Manutenção Constantes:</b> Oferecemos suporte contínuo para garantir que seu app ou loja online esteja sempre atualizado e funcionando sem falhas.</p>
+                        </div>
+                        <div class="divBotaoServico">
+                            <button class="botaoServico" onclick="irParaForm()"><b>Quero um App</b></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="servico">
+                <div class="infoServico">
+                    <div class="imgServicos">
+                        <img src="imagens/Template Web 2.png">
+                    </div>
+                    <div class="textsServicos">
+                        <div class="tituloServico">
+                            <h2>Construímos sua <span style="background-color: #3480e326; color: #333333; border-radius: 4px; padding: 4px;">Loja</span> Online</h2>
+                        </div>
+                        <div class="textServico">
+                            <p><b>Design Responsivo e Personalizado:</b> Seu site se adapta a qualquer dispositivo, oferecendo uma experiência única para seus clientes, seja no desktop ou no celular.</p>
+                        </div>
+                        <div class="textServico">
+                            <p><b>Integração Simples com Ferramentas de Vendas:</b> Conectamos seu site a sistemas de pagamento, estoque e CRM, otimizarando suas vendas e gerenciamento.</p>
+                        </div>
+                        <div class="textServico">
+                            <p><b>SEO e Performance Otimizados:</b> Desenvolvemos seu site com foco em SEO, para que ele se destaque nos motores de busca e atraia mais tráfego qualificado.</p>
+                        </div>
+                        <div class="divBotaoServico">
+                            <button class="botaoServico" onclick="irParaForm()"><b>Quero um Site</b></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divBotaoPraDireita2">
+                <button class="botaoPraDiretita2">
+                    <b><img src="imagens/seta-direita.png"></b>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="beneficios" id="beneficios">
+        <div class="divBeneficios">
+            <div class="tituloBeneficios">
+                <h2>Tecnologias de Alto Desempenho</h2>
+            </div>
+
+            <div class="listaBeneficios">
+                <div class="itemBeneficios">
+                    <div class="tituloItemBeneficios">
+                        <h3>Sites e Apps Rápidos</h3>
+                    </div>
+                    <div class="divGifItemBeneficios">
+                        <div class="gifItemBeneficios">
+                            <video autoplay loop muted>
+                                <source src="imagens/GIF Sites e Apps Rápidos.webm" type="video/webm">
+                                Seu navegador não suporta o formato de vídeo.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="descicaoItemBeneficios">
+                        <p>Seu <b>cliente</b> não espera, ele <span style="background-color: #275ea6; color: #F4F4F4; border-radius: 4px; padding: 4px;">compra!</span></p>
+                    </div>
+                </div>
+                <div class="itemBeneficios">
+                    <div class="tituloItemBeneficios">
+                        <h3>Plataforma Fácil de Usar</h3>
+                    </div>
+                    <div class="divGifItemBeneficios">
+                        <div class="gifItemBeneficios">
+                            <video autoplay loop muted>
+                                <source src="imagens/GIF Plataforma Fácil de Usar.webm" type="video/webm">
+                                Seu navegador não suporta o formato de vídeo.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="descicaoItemBeneficios">
+                        <p>Edite <span style="background-color: #275ea6; color: #F4F4F4; border-radius: 4px; padding: 4px;">produtos, preços e pedidos</span> sem complicação</p>
+                    </div>
+                </div>
+                <div class="itemBeneficios">
+                    <div class="tituloItemBeneficios">
+                        <h3>Checkout Otimizado</h3>
+                    </div>
+                    <div class="divGifItemBeneficios">
+                        <div class="gifItemBeneficios">
+                            <video autoplay loop muted>
+                                <source src="imagens/GIF Checkout Otimizado.webm" type="video/webm">
+                                Seu navegador não suporta o formato de vídeo.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="descicaoItemBeneficios">
+                        <p><span style="background-color: #275ea6; color: #F4F4F4; border-radius: 4px; padding: 4px;">Menos</span> abandono de carrinho, <b>mais faturamento</b></p>
+                    </div>
+                </div>
+                <div class="itemBeneficios">
+                    <div class="tituloItemBeneficios">
+                        <h3>Design Exclusivo</h3>
+                    </div>
+                    <div class="divGifItemBeneficios">
+                        <div class="gifItemBeneficios">
+                            <video autoplay loop muted>
+                                <source src="imagens/GIF Design exclusivo.webm" type="video/webm">
+                                Seu navegador não suporta o formato de vídeo.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="descicaoItemBeneficios">
+                        <p>Seu <span style="background-color: #275ea6; color: #F4F4F4; border-radius: 4px; padding: 4px;">Site/App</span> com a cara da <b>sua marca</b></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comentarioBeneficios">
+                <h4>Utilizamos as melhores tecnologias do mercado para criar soluções rápidas, seguras e escaláveis para o seu negócio.</h4>
+            </div>
+
+            <div class="divBotaoBeneficios">
+                <button class="botaoBeneficios" onclick="irParaForm()"><b>Contate-nos</b></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="promocao" id="promocao">
+        <div class="tituloPromocao">
+            <h2>Oferta de Lançamento: <span style="background-color: #275ea6; color: #F4F4F4; border-radius: 4px; padding: 4px;">50%<span style="color: transparent">_</span>OFF!</span></h2>
+        </div>
+        <div class="divTextPromocao">
+            <div class="textPromocao">
+                <p><b>Está na hora</b> de levar seu negócio para o próximo nível - e com <b>metade do preço!</b></p>
+            </div>
+            <div class="textPromocao">
+                <p>No campo <b>Código Promocional</b> digite <span style="background-color: #275ea6; color: #F4F4F4; border-radius: 4px; padding: 4px;">modalize50</span> para garantir o desconto.</p>
+            </div>
+            <div class="textPromocao">
+                <p>Promoção por <b>tempo limitado!</b> Não perca essa chance de <b>impulsionar</b> sua marca no digital.</p>
+            </div>
+        </div>
+        <div class="divBotaoPromocao">
+            <button class="botaoPromocao" onclick="irParaForm()">Quero o Desconto</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contentFooter">
+            <div class="headerFooter">
+                <div class="logoFooter">
+                    <img src="imagens/logomarca.png">
+                    <h1>Modalize</h1>
+                </div>
+                <div class="divRedesSociaisFooter">
+                    <div class="redesSociaisFooter">
+                        <button><img>...</button>
+                    </div>
+                    <div class="redesSociaisFooter">
+                        <button><img>...</button>
+                    </div>
+                    <div class="redesSociaisFooter">
+                        <button><img>...</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mainFooter">
+                <div class="divContentMainFooter">
+                    <div class="contentMainFooter">
+                        <h2>Sobre Nós</h2>
+                        <br>
+                        <a href="#promocao">Lançamento</a>
+                        <a href="#servicos">Nossos Serviços</a>
+                    </div>
+                </div>
+                <div class="divContentMainFooter">
+                    <div class="contentMainFooter">
+                        <h2>Fale Conosco</h2>
+                        <br>
+                        <a href="mailto:modalizebr@gmail.com">Email</a>
+                        <a href="https://wa.me/5581989709398">Whatsapp</a>
+                    </div>
+                </div>
+                <div class="divContentMainFooter">
+                    <div class="contentMainFooter">
+                        <h2>Links Rápidos</h2>
+                        <br>
+                        <a href="mailto:modalizebr@gmail.com">Contate-nos</a>
+                        <a href="mailto:modalizebr@gmail.com">Suporte</a>
+                    </div>
+                </div>
+            </div>
+            <div class="divCopyFooter">
+                <p class="copyFooter">&copy; 2025 Modalize Web. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="site.js"></script>
+</body>
+</html>

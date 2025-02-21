@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Inter", serif;
+    background: linear-gradient(to right, #3481E3, #1D5A80);
+}
+.container{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contentForm{
+    width: 70%;
+    border-radius: 30px;
+    background-color: #f4f4f4;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 2px 0px #333333;
+}
+
+/* SAIR */
+.sair{
+    height: 100px;
+    width: 100%;
+    padding-right: 68px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.sair button{
+    background-color: transparent;
+    border: none;
+}
+.sair button img{
+    width: 32px;
+}
+.sair button:hover{
+    transform: scale(1.2);
+}
+
+/* HEDAER */
+.headerForm{
+    width: 90%;
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.imgHeaderForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgHeaderForm img{
+    width: 250px;
+}
+.textHeaderForm{
+    color: #3481E3;
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+}
+
+/* FORM */
+form{
+    height: auto;
+    width: 80%;
+    display: grid;
+    grid-template-areas:
+    "nome espaco sobrenome"
+    "empresa empresa empresa"
+    "email email email"
+    "telefone telefone telefone"
+    "servico servico codigo"
+    "botao botao botao";
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 0.2fr 1fr;
+}
+
+.nome{
+    grid-area: nome;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-bottom: solid 2px #33333385;
+    margin-bottom: 15px;
+}
+.nome label{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.nome input{
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    font-size: 20px;
+    height: 30px;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+.espaco{
+    grid-area: espaco;
+}
+
+.sobrenome{
+    grid-area: sobrenome;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-bottom: solid 2px #33333385;
+    margin-bottom: 15px;
+}
+.sobrenome label{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.sobrenome input{
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    font-size: 20px;
+    height: 30px;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+.empresa{
+    grid-area: empresa;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-bottom: solid 2px #33333385;
+    margin-bottom: 15px;
+}
+.empresa label{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.empresa input{
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    font-size: 20px;
+    height: 30px;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+.email{
+    grid-area: email;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-bottom: solid 2px #33333385;
+    margin-bottom: 15px;
+}
+.email label{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.email input{
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    font-size: 20px;
+    height: 30px;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+.telefone{
+    grid-area: telefone;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-bottom: solid 2px #33333385;
+    margin-bottom: 15px;
+}
+.telefone label{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.telefone input{
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    font-size: 20px;
+    height: 30px;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+.servico{
+    grid-area: servico;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 17px;
+}
+.servico p{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.opcoesServico{
+    margin-top: 15px;
+    font-size: 20px;
+    height: 30px;
+    color: #333333;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.opcaoWeb{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.opcaoMobile{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+input[type="checkbox"]{
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.codigo{
+    grid-area: codigo;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-bottom: solid 2px #33333385;
+    margin-bottom: 15px;
+}
+.codigo p{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.codigo input{
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    font-size: 20px;
+    height: 30px;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+.botao{
+    grid-area: botao;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botao button{
+    width: 250px;
+    height: 60px;
+    z-index: 2;
+    background-color: #3481E3;
+    color: #F4F4F4;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 955px){
+    .imgHeaderForm img{
+        width: 150px;
+    }
+    .textHeaderForm{
+        font-size: 14px;
+    }
+    form{
+        height: auto;
+        width: 65%;
+        margin-top: 28px;
+        display: grid;
+        grid-template-areas:
+        "nome nome nome"
+        "sobrenome sobrenome sobrenome"
+        "empresa empresa empresa"
+        "email email email"
+        "telefone telefone telefone"
+        "servico servico servico"
+        "codigo codigo codigo"
+        "botao botao botao";
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 0.2fr 1fr;
+    }
+
+    .nome label{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .nome input{
+        margin-top: 0px;
+    }
+
+    .sobrenome label{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .sobrenome input{
+        margin-top: 0px;
+    }
+
+    .empresa label{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .empresa input{
+        margin-top: 0px;
+    }
+
+    .email label{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .email input{
+        margin-top: 0px;
+    }
+
+    .telefone label{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .telefone input{
+        margin-top: 0px;
+    }
+
+    .servico p{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .opcoesServico{
+        margin-top: 0px;
+    }
+
+    .codigo p{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .codigo input{
+        margin-top: 0px;
+    }
+}
+@media (max-width: 768px){
+    .textHeaderForm{
+        font-size: 12px;
+    }
+    form{
+        width: 70%;
+    }
+}
+@media (max-width: 550px){
+    .container{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .contentForm{
+        width: 90%;
+    }
+    .sair{
+        height: 100px;
+        width: 80%;
+        padding-right: 0px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .sair button img{
+        width: 28px;
+    }
+    .sair button:hover{
+        transform: scale(1.2);
+    }
+    .headerForm{
+        width: 90%;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    form{
+        width: 75%;
+    }
+    .opcoesServico{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 7.5px;
+    }
+    .opcaoWeb label{
+        font-size: 18px;
+    }
+    .opcaoMobile label{
+        font-size: 18px;
+    }
+}
+@media (max-width: 400px){
+    .headerForm{
+        width: 85%;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
