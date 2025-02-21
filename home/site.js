@@ -8,7 +8,7 @@ function irParaPromocao(){
     document.getElementById('promocao').scrollIntoView({ behavior: 'smooth' });
 }
 function irParaForm(){
-    window.location.href='../form/form.html';
+    window.location.href='/form';
 }
 
 document.addEventListener("DOMContentLoaded", function () {
