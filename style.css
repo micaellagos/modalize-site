@@ -505,12 +505,8 @@ header{
     width: 100%;
 }
 .gifItemBeneficios video{
-    transition: tranform 0.5s;
     width: 250px; 
     height: 250px;
-}
-.gifItemBeneficios video:hover{
-    transform: scale(1.13);
 }
 .descicaoItemBeneficios{
     display: flex;
