@@ -29,8 +29,7 @@ body{
 /* SAIR */
 .sair{
     height: 100px;
-    width: 100%;
-    padding-right: 68px;
+    width: 93%;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -45,11 +44,26 @@ body{
 .sair button:hover{
     transform: scale(1.2);
 }
+@media (max-width: 770px){
+    .sair{
+        width: 88%;
+    }
+}
+@media (max-width: 500px){
+    .sair{
+        width: 85%;
+    }
+}
+@media (max-width: 430px){
+    .sair{
+        height: 80px;
+        width: 83%;
+    }
+}
 
 /* HEDAER */
 .headerForm{
     width: 90%;
-    padding-top: 25px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -59,364 +73,176 @@ body{
     align-items: center;
 }
 .imgHeaderForm img{
-    width: 250px;
+    width: 50%;
 }
 .textHeaderForm{
     color: #3481E3;
     display: flex;
     justify-content: center;
-    font-size: 19px;
+    font-size: 30px;
+}
+@media (max-width: 2000px){
+    .textHeaderForm{
+        font-size: 25px;
+    }
+}
+@media (max-width: 1732px){
+    .textHeaderForm{
+        font-size: 20px;
+    }
+}
+@media (max-width: 1385px){
+    .textHeaderForm{
+        font-size: 18px;
+    }
+}
+@media (max-width: 1246px){
+    .textHeaderForm{
+        font-size: 16px;
+    }
+}
+@media (max-width: 1107px){
+    .textHeaderForm{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 999px){
+    .sair button img{
+        width: 27px;
+    }
+    .headerForm{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    .textHeaderForm{
+        font-size: 14px;
+        width: 90%;
+    }
+    form{
+        margin-top: 40px;
+    }
+}
+@media (max-width: 560px){
+    .textHeaderForm{
+        font-size: 12px;
+    }
+}
+@media (max-width: 487px){
+    .textHeaderForm{
+        font-size: 10px;
+    }
+}
+@media (max-width: 412px){
+    .textHeaderForm{
+        font-size: 8px;
+    }
+}
+@media (max-width: 334px){
+    .textHeaderForm{
+        font-size: 7px;
+    }
+}
+@media (max-width: 294px){
+    .textHeaderForm{
+        font-size: 6px;
+    }
 }
 
 /* FORM */
 form{
     height: auto;
     width: 80%;
-    display: grid;
-    grid-template-areas:
-    "nome espaco sobrenome"
-    "empresa empresa empresa"
-    "email email email"
-    "telefone telefone telefone"
-    "servico servico codigo"
-    "botao botao botao";
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 0.2fr 1fr;
-}
-
-.nome{
-    grid-area: nome;
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    border-bottom: solid 2px #33333385;
-    margin-bottom: 15px;
+    font-family: "Inter", serif;
 }
-.nome label{
-    font-size: 25px;
-    margin-bottom: 15px;
-}
-.nome input{
+#nome, #sobrenome, #empresa, #email, #telefone, #codigo{
     border: none;
     outline: none;
-    margin-top: 10px;
-    font-size: 20px;
-    height: 30px;
-    background-color: #f4f4f4;
+    font-size: 18px;
+    height: 50px;
+    margin-bottom: 20px;
+    padding-left: 10px;
     color: #333333;
+    border-radius: 10px;
 }
-
-.espaco{
-    grid-area: espaco;
-}
-
-.sobrenome{
-    grid-area: sobrenome;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    border-bottom: solid 2px #33333385;
-    margin-bottom: 15px;
-}
-.sobrenome label{
-    font-size: 25px;
-    margin-bottom: 15px;
-}
-.sobrenome input{
-    border: none;
-    outline: none;
-    margin-top: 10px;
-    font-size: 20px;
-    height: 30px;
-    background-color: #f4f4f4;
+p{
+    font-size: 18px;
+    margin-bottom: 20px;
     color: #333333;
-}
-
-.empresa{
-    grid-area: empresa;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    border-bottom: solid 2px #33333385;
-    margin-bottom: 15px;
-}
-.empresa label{
-    font-size: 25px;
-    margin-bottom: 15px;
-}
-.empresa input{
-    border: none;
-    outline: none;
-    margin-top: 10px;
-    font-size: 20px;
-    height: 30px;
-    background-color: #f4f4f4;
-    color: #333333;
-}
-
-.email{
-    grid-area: email;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    border-bottom: solid 2px #33333385;
-    margin-bottom: 15px;
-}
-.email label{
-    font-size: 25px;
-    margin-bottom: 15px;
-}
-.email input{
-    border: none;
-    outline: none;
-    margin-top: 10px;
-    font-size: 20px;
-    height: 30px;
-    background-color: #f4f4f4;
-    color: #333333;
-}
-
-.telefone{
-    grid-area: telefone;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    border-bottom: solid 2px #33333385;
-    margin-bottom: 15px;
-}
-.telefone label{
-    font-size: 25px;
-    margin-bottom: 15px;
-}
-.telefone input{
-    border: none;
-    outline: none;
-    margin-top: 10px;
-    font-size: 20px;
-    height: 30px;
-    background-color: #f4f4f4;
-    color: #333333;
-}
-
-.servico{
-    grid-area: servico;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    margin-bottom: 17px;
-}
-.servico p{
-    font-size: 25px;
-    margin-bottom: 15px;
-}
-.opcoesServico{
-    margin-top: 15px;
-    font-size: 20px;
-    height: 30px;
-    color: #333333;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 .opcaoWeb{
     display: flex;
-    justify-content: start;
     align-items: center;
+    margin-bottom: 10px;
 }
 .opcaoMobile{
     display: flex;
-    justify-content: start;
     align-items: center;
 }
-input[type="checkbox"]{
+#siteWeb{
+    height: 25px;
+    width: 25px;
     margin-right: 10px;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    cursor: pointer;
 }
-
-.codigo{
-    grid-area: codigo;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    border-bottom: solid 2px #33333385;
-    margin-bottom: 15px;
+#appMobile{
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
 }
-.codigo p{
-    font-size: 25px;
-    margin-bottom: 15px;
-}
-.codigo input{
-    border: none;
-    outline: none;
-    margin-top: 15px;
-    font-size: 20px;
-    height: 30px;
-    background-color: #f4f4f4;
+label{
     color: #333333;
 }
-
-.botao{
-    grid-area: botao;
-    height: 130px;
+#codigo{
+    margin-top: 20px;
+}
+.divBotao{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.botao button{
+.botao{
     width: 250px;
     height: 60px;
-    z-index: 2;
-    background-color: #3481E3;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background: linear-gradient(to right, #275ea6, #1D5A80);
     color: #F4F4F4;
     border: none;
     font-size: 20px;
     cursor: pointer;
 }
-.botao button:hover{
-    background-color: #1D5A80;
+.botao:hover{
+    background: linear-gradient(to right, #1d477e, #143f5a);
 }
-
-@media (max-width: 955px){
-    .imgHeaderForm img{
-        width: 150px;
+@media (max-width: 375px){
+    #nome, #sobrenome, #empresa, #email, #telefone, #codigo{
+        font-size: 16px;
+        font-family: "Inter", serif;
     }
-    .textHeaderForm{
+}
+@media (max-width: 345px){
+    #nome, #sobrenome, #empresa, #email, #telefone, #codigo{
         font-size: 14px;
-    }
-    form{
-        height: auto;
-        width: 65%;
-        margin-top: 28px;
-        display: grid;
-        grid-template-areas:
-        "nome nome nome"
-        "sobrenome sobrenome sobrenome"
-        "empresa empresa empresa"
-        "email email email"
-        "telefone telefone telefone"
-        "servico servico servico"
-        "codigo codigo codigo"
-        "botao botao botao";
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 0.2fr 1fr;
-    }
-
-    .nome label{
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-    .nome input{
-        margin-top: 0px;
-    }
-
-    .sobrenome label{
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-    .sobrenome input{
-        margin-top: 0px;
-    }
-
-    .empresa label{
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-    .empresa input{
-        margin-top: 0px;
-    }
-
-    .email label{
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-    .email input{
-        margin-top: 0px;
-    }
-
-    .telefone label{
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-    .telefone input{
-        margin-top: 0px;
-    }
-
-    .servico p{
-        font-size: 20px;
-        margin-bottom: 15px;
-    }
-    .opcoesServico{
-        margin-top: 0px;
-    }
-
-    .codigo p{
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-    .codigo input{
-        margin-top: 0px;
+        font-family: "Inter", serif;
     }
 }
-@media (max-width: 768px){
-    .textHeaderForm{
+@media (max-width: 294px){
+    #nome, #sobrenome, #empresa, #email, #telefone, #codigo{
         font-size: 12px;
-    }
-    form{
-        width: 70%;
+        font-family: "Inter", serif;
     }
 }
-@media (max-width: 550px){
-    .container{
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-    .contentForm{
-        width: 90%;
-    }
-    .sair{
-        height: 100px;
-        width: 80%;
-        padding-right: 0px;
-        display: flex;
-        justify-content: end;
-        align-items: center;
-    }
-    .sair button img{
-        width: 28px;
-    }
-    .sair button:hover{
-        transform: scale(1.2);
-    }
-    .headerForm{
-        width: 90%;
-        padding-top: 10px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    form{
-        width: 75%;
-    }
-    .opcoesServico{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 7.5px;
-    }
-    .opcaoWeb label{
-        font-size: 18px;
-    }
-    .opcaoMobile label{
-        font-size: 18px;
-    }
-}
-@media (max-width: 400px){
-    .headerForm{
-        width: 85%;
-        padding-top: 10px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+@media (max-width: 252px){
+    #nome, #sobrenome, #empresa, #email, #telefone, #codigo{
+        font-size: 10px;
+        font-family: "Inter", serif;
     }
 }

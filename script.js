@@ -43,33 +43,39 @@ document.addEventListener("DOMContentLoaded", function () {
     atualizarVisibilidade();
 });
 document.addEventListener("DOMContentLoaded", function () {
-    const botoes = {
-        esquerda2: document.querySelector(".botaoPraEsquerda2"),
-        direita2: document.querySelector(".botaoPraDiretita2"),
-    };
+    function configurarBotoes(esquerdaSelector, direitaSelector) {
+        const botoes = {
+            esquerda: document.querySelector(esquerdaSelector),
+            direita: document.querySelector(direitaSelector),
+        };
 
-    const opcoes = document.querySelectorAll(".tituloServicos");
-    const servicos = document.querySelectorAll(".servico");
-    let indiceAtual = 0;
+        const opcoes = document.querySelectorAll(".tituloServicos");
+        const servicos = document.querySelectorAll(".servico");
+        let indiceAtual = 0;
 
-    function atualizarVisibilidade() {
-        opcoes.forEach((opcao, index) => {
-            opcao.classList.toggle("ativa", index === indiceAtual);
+        function atualizarVisibilidade() {
+            opcoes.forEach((opcao, index) => {
+                opcao.classList.toggle("ativa", index === indiceAtual);
+            });
+            servicos.forEach((servico, index) => {
+                servico.classList.toggle("ativo", index === indiceAtual);
+            });
+        }
+
+        botoes.direita.addEventListener("click", function () {
+            indiceAtual = (indiceAtual + 1) % opcoes.length;
+            atualizarVisibilidade();
         });
-        servicos.forEach((servico, index) => {
-            servico.classList.toggle("ativo", index === indiceAtual);
+
+        botoes.esquerda.addEventListener("click", function () {
+            indiceAtual = (indiceAtual - 1 + opcoes.length) % opcoes.length;
+            atualizarVisibilidade();
         });
+
+        atualizarVisibilidade();
     }
 
-    botoes.direita2.addEventListener("click", function () {
-        indiceAtual = (indiceAtual + 1) % opcoes.length;
-        atualizarVisibilidade();
-    });
-
-    botoes.esquerda2.addEventListener("click", function () {
-        indiceAtual = (indiceAtual - 1 + opcoes.length) % opcoes.length;
-        atualizarVisibilidade();
-    });
-
-    atualizarVisibilidade();
+    // Configura os dois grupos de botões
+    configurarBotoes(".botaoPraEsquerda2", ".botaoPraDireita2");
+    configurarBotoes(".botaoPraEsquerda3", ".botaoPraDireita3");
 });

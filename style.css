@@ -278,22 +278,20 @@ header{
     justify-content: center;
     background-color: #F4F4F4;
     color: #333333;
-    padding-top: 80px;
-    padding-bottom: 80px;
     width: 100%;
+    padding: 50px;
     box-shadow: 
         inset 0 20px 20px rgba(4, 4, 4, 0.229),
         inset 0 -20px 15px rgba(4, 4, 4, 0.229);
     caret-color: transparent;
 }
 .headerServicos{
+    width: 50%;
+    font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 50%;
-    height: 100px;
-    font-size: 25px;
 }
 .botaoPraEsquerda1, .botaoPraDiretita1{
     background-color: transparent;
@@ -302,28 +300,25 @@ header{
     cursor: pointer;
     transition: transform 0.2s;
 }
-@media (min-width: 1000px){
-    .botaoPraEsquerda2, .botaoPraDiretita2{
-        display: none;
-    }
-}
 .botaoPraEsquerda1:hover{
     transform: scale(1.5);
 }
 .botaoPraDiretita1:hover{
     transform: scale(1.5);
 }
+.botaoPraEsquerda2, .botaoPraDireita2{
+    display: none;
+}
+.botaoPraEsquerda3, .botaoPraDireita3{
+    display: none;
+}
 .contentServicos{
-    width: 95%;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.servico{
-    width: 90%;
-}
 .infoServico{
-    height: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -331,12 +326,14 @@ header{
     grid-template-columns: 1fr 1fr;
 }
 .imgServicos{
-    height: 100%;
+    width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
+    justify-content: space-between;
 }
 .infoServico img{
-    max-width: 90%;
+    max-width: 80%;
     animation: slideRight 0.5s ease-in-out;
 }
 @keyframes slideRight {
@@ -348,13 +345,13 @@ header{
     }
 }
 .textsServicos{
-    height: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    font-size: 20px;
+    font-size: 25px;
+    margin-top: 50px;
 }
 .tituloServicos, .servico {
     display: none;
@@ -364,17 +361,18 @@ header{
 }
 .tituloServico{
     text-align: center;
+    margin-bottom: 50px;
 }
 .textServico{
     background-color: #3480e326;
     color: #333333;
     padding: 10px;
     border-radius: 10px;
+    margin-bottom: 25px;
 }
 .divBotaoServico{
     width: 100%;
     height: 100px;
-    margin-top: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -392,255 +390,46 @@ header{
 .botaoServico:hover{
     background: linear-gradient(to right, #1d477e, #143f5a);
 }
-@media (min-width: 1700px){
-    .servicos{
-        height: 900px;
-        padding-top: 40px;
-        padding-bottom: 130px;
-    }
-    .contentServicos{
-        padding-top: 50px;
-    }
-}
 @media (max-width: 999px){
-    .servicos{
-        height: 1200px;
-        padding-top: 40px;
-        padding-bottom: 0px;
-    }
     .headerServicos{
-        font-size: 20px;
-        height: 50px;
         width: 100%;
-        padding-top: 15px;
     }
-    .contentServicos{
-        height: 100%;
-        width: 90%;
+    .imgServicos{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: -50px;
+        justify-content: space-between;
     }
     .botaoPraEsquerda1, .botaoPraDiretita1{
         display: none;
     }
     .botaoPraEsquerda2{
+        display: block;
         visibility: hidden;
     }
-    .botaoPraDiretita2{
-        height: 100%;
-        margin-bottom: 550px;
-        margin-top: 0px;
+    .botaoPraDireita2{
+        display: block;
         background-color: transparent;
         border-radius: 25px;
         border: none;
         cursor: pointer;
-        transition: transform 0.2s;
     }
-    .botaoPraEsquerda2 img{
-        width: 50px;
+    .botaoPraEsquerda3{
+        display: block;
+        visibility: hidden;
     }
-    .botaoPraDiretita2 img{
-        width: 50px;
-    }
-    .botaoPraEsquerda2:hover{
-        transform: scale(1.5);
-    }
-    .botaoPraDiretita2:hover{
-        transform: scale(1.5);
+    .botaoPraDireita3{
+        display: block;
+        background-color: transparent;
+        border-radius: 25px;
+        border: none;
+        cursor: pointer;
     }
     .infoServico{
-        height: 800px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    .imgServicos{
-        margin-top: 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .infoServico img{
-        width: 70%;
-    }
-    .textsServicos{
-        padding-top: 50px;
-        width: 90%;
-    }
-    .tituloServico{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 40px;
-    }
-    .tituloServico h2{
-        width: 90%;
-    }
-    .textServico{
-        background-color: #3480e326;
-        color: #333333;
-        padding: 10px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-    }
-    .divBotaoServico{
-        width: 100%;
-        height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .botaoServico{
-        width: 200px;
-        height: 55px;
-        z-index: 2;
-        background: linear-gradient(to right, #275ea6, #1D5A80);
-        color: #F4F4F4;
-        border: none;
-        font-size: 20px;
-        cursor: pointer;
-    }
-    .botaoServico:hover{
-        background: linear-gradient(to right, #1d477e, #143f5a);
-    }
-}
-@media (max-width: 850px){
-    .headerServicos{
-        font-size: 20px;
-        height: 40px;
-        margin-top: 20px;
-    }
-}
-@media (max-width: 750px){
-    .servicos{
-        padding: 0px;
-    }
-    .headerServicos{
-        height: 100px;
-        padding-bottom: 10px;
-    }
-    .infoServico img{
-        width: 100%;
-    }
-    .contentServicos{
-        margin-top: -100px;
-    }
-    .botaoServico{
-        margin-top: 0px;
-    }
-}
-@media (max-width: 610px){
-    .botaoServico{
-        margin-top: 10px;
-    }
-}
-@media (max-width: 598px){
-    .servicos{
-        height: 1100px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
-    .headerServicos{
-        margin-top: 20px;
-        height: 100px;
-    }
-    .textsServicos{
-        font-size: 15px;
-    }
-    .textServico{
-        width: 90%;
-    }
-    .botaoServico{
-        margin-top: 50px;
-    }
-}
-@media (max-width: 550px){
-    .infoServico img{
-        width: 100%;
-    }
-    .textServico{
-        width: 100%;
-    }
-}
-@media (max-width: 516px){
-    .botaoServico{
-        margin-bottom: 50px;
-    }
-}
-@media (max-width: 500px){
-    .servicos{
-        height: 1000px;
-    }
-    .headerServicos{
-        padding-bottom: 30px;
-    }
-    .contentServicos{
-        height: 100%;
-        width: 95%;
-    }
-    .botaoPraEsquerda2 img{
-        width: 40px;
-    }
-    .botaoPraDiretita2 img{
-        width: 40px;
-    }
-    .headerServicos{
-        margin-top: 15px;
-        width: 100%;
-    }
-    .imgServicos{
-        margin-top: 30px;
-        margin-bottom: 20px;
-        width: 100%;
-    }
-    .textsServicos{
-        padding-top: 20px;
-        font-size: 13.5px;
-    }
-    .botaoServico{
-        margin-top: 50px;
-    }
-}
-@media (max-width: 420px){
-    .headerServicos{
-        height: 70px;
-        padding-top: 30px;
-        margin-bottom: 0px;
-        width: 100%;
-    }
-    .infoServico{
-        width: 100%;
-    }
-    .textsServicos{
-        width: 100%;
-        font-size: 13px;
-    }
-    .textsServicos h2{
-        font-size: 19px;
-        width: 100%;
-    }
-    .botaoServico{
-        margin-top: 70px;
-    }
-}
-@media (max-width: 334px){
-    .botaoPraEsquerda2 img{
-        width: 30px;
-    }
-    .botaoPraDiretita2 img{
-        width: 30px;
-    }
-    .botaoServico{
-        margin-top: 20px;
-    }
-}
-@media (max-width: 300px){
-    .servicos{
-        height: 1100px;
     }
 }
 
