@@ -279,7 +279,10 @@ header{
     background-color: #F4F4F4;
     color: #333333;
     width: 100%;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
     box-shadow: 
         inset 0 20px 20px rgba(4, 4, 4, 0.229),
         inset 0 -20px 15px rgba(4, 4, 4, 0.229);
@@ -292,6 +295,9 @@ header{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+#TituloServicosCelular{
+    display: none;
 }
 .botaoPraEsquerda1, .botaoPraDiretita1{
     background-color: transparent;
@@ -306,12 +312,6 @@ header{
 .botaoPraDiretita1:hover{
     transform: scale(1.5);
 }
-.botaoPraEsquerda2, .botaoPraDireita2{
-    display: none;
-}
-.botaoPraEsquerda3, .botaoPraDireita3{
-    display: none;
-}
 .contentServicos{
     margin-top: 50px;
     display: flex;
@@ -319,6 +319,7 @@ header{
     align-items: center;
 }
 .infoServico{
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -326,11 +327,9 @@ header{
     grid-template-columns: 1fr 1fr;
 }
 .imgServicos{
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-between;
 }
 .infoServico img{
     max-width: 80%;
@@ -345,11 +344,11 @@ header{
     }
 }
 .textsServicos{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    justify-content: space-around;
     font-size: 25px;
     margin-top: 50px;
 }
@@ -358,6 +357,9 @@ header{
 }
 .tituloServicos.ativa, .servico.ativo {
     display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .tituloServico{
     text-align: center;
@@ -366,6 +368,7 @@ header{
 .textServico{
     background-color: #3480e326;
     color: #333333;
+    width: 100%;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 25px;
@@ -391,45 +394,63 @@ header{
     background: linear-gradient(to right, #1d477e, #143f5a);
 }
 @media (max-width: 999px){
+    .servicos{
+        padding-bottom: 0px;
+    }
     .headerServicos{
         width: 100%;
     }
-    .imgServicos{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        justify-content: space-between;
+    #appMobile{
+        display: none;
+    }
+    #siteWeb{
+        display: none;
+    }
+    #TituloServicosCelular{
+        display: block;
     }
     .botaoPraEsquerda1, .botaoPraDiretita1{
         display: none;
     }
-    .botaoPraEsquerda2{
-        display: block;
-        visibility: hidden;
+    .imgServicos{
+        width: 110%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .botaoPraDireita2{
-        display: block;
-        background-color: transparent;
-        border-radius: 25px;
-        border: none;
-        cursor: pointer;
-    }
-    .botaoPraEsquerda3{
-        display: block;
-        visibility: hidden;
-    }
-    .botaoPraDireita3{
-        display: block;
-        background-color: transparent;
-        border-radius: 25px;
-        border: none;
-        cursor: pointer;
+    .contentServicos{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .infoServico{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .infoServico h2{
+        font-size: 30px;
+    }
+    .tituloServicos, .servico {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tituloServicos.ativa, .servico.ativo {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .textServico{
+        font-size: 18px;
+    }
+    .divBotaoServico{
+        margin-bottom: 50px;
     }
 }
 
